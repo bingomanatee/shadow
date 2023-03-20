@@ -53,6 +53,10 @@ const theme = {
         light: 'hsl(14,100%,30%)',
         dark: 'hsl(14,100%,70%)',
       },
+      'box-button-on': {
+        light: 'hsl(113,33%,80%)',
+        dark: 'hsl(113,33%,10%)',
+      },
       background: {
         dark: '#111111',
         light: '#FFFFFF',

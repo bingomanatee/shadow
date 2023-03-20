@@ -8,7 +8,6 @@ import {
   Heading,
   Layer,
   Menu,
-  ResponsiveContext,
   Tab,
   Tabs, Text,
   TextInput

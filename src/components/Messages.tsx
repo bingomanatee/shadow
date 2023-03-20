@@ -59,6 +59,9 @@ export default function Messages() {
     return value.messages;
   }, [value.messages]);
 
+  if (!value.messages.length) {
+    return null;
+  }
   return (
     <Layer position="bottom-right" modal={false}  background="transparent" >
       {messages.map((msg: Message, index) => <MessageButton msg={msg}

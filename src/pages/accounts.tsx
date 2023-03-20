@@ -19,7 +19,6 @@ import { Forest } from '@wonderlandlabs/forest'
 import { Leaf } from '@wonderlandlabs/forest/lib/Leaf'
 import AddAccount from '@/components/AddAccount'
 import { Checkbox, CheckboxSelected, Search } from 'grommet-icons'
-import FormItem from '@/components/FormItem'
 import { short } from '@/lib/utils'
 
 
@@ -83,14 +82,22 @@ function Accounts() {
 
 
   const searchMe = useCallback((a: Account) => {
-    if (!value.search) return true;
+    if (!value.search) {
+      return true;
+    }
     const searchPhrase = value.search.trim().toLowerCase();
-    if (!searchPhrase) return true;
+    if (!searchPhrase) {
+      return true;
+    }
     for (const key of Object.keys(a)) {
-        // @ts-ignore
+      // @ts-ignore
       const fieldValue: any = a[key];
-        if (!fieldValue) continue;
-        if (`${fieldValue}`.toLowerCase().includes(searchPhrase)) return true;
+      if (!fieldValue) {
+        continue;
+      }
+      if (`${fieldValue}`.toLowerCase().includes(searchPhrase)) {
+        return true;
+      }
     }
     return false;
   }, [value.search]);
@@ -123,6 +130,13 @@ function Accounts() {
       property: 'account_owner', header: 'Owner', size: '200px', render(a: Account) {
         return a.account_owner ? <CheckboxSelected color="darkgreen"/> : <Checkbox color="lightgrey"/>
       }
+    },
+    {
+      property: 'account-edit', header: 'Configure', size: "300px", render(a: Account) {
+        if (a.account_owner) {
+          return <Link href={`/accounts/${a.uid}`}><Button plain={false}>Configure</Button></Link>
+        }
+      }
     }
   ]), [value.accounts]);
 
@@ -145,20 +159,21 @@ function Accounts() {
                   subtitle=""/>
 
       <Box direction="row">
-      <Box width="1/4">
-        <TextInput  icon={<Search />} name="search" value={value.search} onChange={state.do.updateSearch} />
-      </Box>
+        <Box width="1/4">
+          <TextInput icon={<Search/>} name="search" value={value.search} onChange={state.do.updateSearch}/>
+        </Box>
       </Box>
 
-      <DataTable fill="horizontal" data={value.accounts.filter(searchMe)} select={value.selected} onSelect={state.do.set_selected}
+      <DataTable fill="horizontal" data={value.accounts.filter(searchMe)} select={value.selected}
+                 onSelect={state.do.set_selected}
                  sort={{ property: 'timestamp', direction: 'desc' }}
                  columns={columns}/>
 
       <Box gap="large" direction="row" align="baseline">
         <AddAccount refresh={state.do.load}/>
         <Button onClick={state.do.deleteSelected} plain={false} disabled={!value?.selected?.length}>
-        Delete Selected
-      </Button>
+          Delete Selected
+        </Button>
       </Box>
     </article>
   )
