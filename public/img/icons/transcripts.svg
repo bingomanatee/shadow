@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-5.72779,-49.4059)">
+        <g transform="matrix(0.727273,0,0,0.888889,4.27325,27.1837)">
+            <rect id="transcript" x="2" y="25" width="27.5" height="22.5" style="fill:none;"/>
+            <clipPath id="_clip1">
+                <rect id="transcript1" serif:id="transcript" x="2" y="25" width="27.5" height="22.5"/>
+            </clipPath>
+            <g clip-path="url(#_clip1)">
+                <g transform="matrix(1.375,0,0,1.125,-4.0732,-3.125)">
+                    <path d="M15.25,25.288C20.907,25.288 25.5,30.003 25.5,35.81C25.5,41.618 20.907,46.333 15.25,46.333C9.593,46.333 5,41.618 5,35.81C5,30.003 9.593,25.288 15.25,25.288ZM21.75,29.31L8.75,29.31L8.75,42.31L21.75,42.31L21.75,29.31Z" style="fill:white;"/>
+                </g>
+                <g transform="matrix(1.375,0,0,1.125,-5.87571,-30.5816)">
+                    <path d="M25.728,52.927C25.728,50.984 24.15,49.406 22.207,49.406L9.249,49.406C7.305,49.406 5.728,50.984 5.728,52.927L5.728,65.885C5.728,67.828 7.305,69.406 9.249,69.406L22.207,69.406C24.15,69.406 25.728,67.828 25.728,65.885L25.728,52.927Z"/>
+                    <path d="M25.728,52.927L25.728,65.885C25.728,67.828 24.15,69.406 22.207,69.406L9.249,69.406C7.305,69.406 5.728,67.828 5.728,65.885L5.728,52.927C5.728,50.984 7.305,49.406 9.249,49.406L22.207,49.406C24.15,49.406 25.728,50.984 25.728,52.927ZM24.978,52.927C24.978,51.397 23.736,50.156 22.207,50.156L9.249,50.156C7.719,50.156 6.478,51.397 6.478,52.927L6.478,65.885C6.478,67.414 7.719,68.656 9.249,68.656L22.207,68.656C23.736,68.656 24.978,67.414 24.978,65.885L24.978,52.927Z" style="fill:rgb(123,5,176);"/>
+                </g>
+                <g transform="matrix(1,0,0,1,-0.6875,-0.904541)">
+                    <g transform="matrix(1.89062,0,0,1.125,-11.4072,-30.5816)">
+                        <rect x="10.728" y="52.906" width="8" height="1.5" style="fill:white;"/>
+                    </g>
+                    <g transform="matrix(1.375,0,0,1.125,-5.87571,-26.8439)">
+                        <rect x="10.728" y="52.906" width="8" height="1.5" style="fill:white;"/>
+                    </g>
+                    <g transform="matrix(1.63281,0,0,1.125,-8.64147,-15.8351)">
+                        <rect x="10.728" y="52.906" width="8" height="1.5" style="fill:white;"/>
+                    </g>
+                    <g transform="matrix(1.63281,0,0,1.125,-8.64147,-22.9863)">
+                        <rect x="10.728" y="52.906" width="8" height="1.5" style="fill:white;"/>
+                    </g>
+                    <g transform="matrix(1.375,0,0,1.125,-5.87571,-19.2005)">
+                        <rect x="10.728" y="52.906" width="8" height="1.5" style="fill:white;"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
