@@ -1,16 +1,14 @@
 import { Grid, Grommet, Main } from 'grommet'
-import Sizer from '@/components/Sizer'
 import Navigation from '@/components/Navigation'
 import GlobalState from '@/components/GlobalState'
 import Header from '@/components/PageHeader'
 import Messages from '@/components/Messages'
-import { GenericPageProps } from '../../lib/types'
+import { GenericPageProps } from '@/lib/types'
 import theme from './grommet-theme';
 
 export default function PageFrame({ children }: GenericPageProps) {
   return (<Grommet theme={theme}>
     <GlobalState>
-      <Sizer>
         <Grid
           rows={['auto', 'auto', 'flex']}
           columns={['100%']}
@@ -31,7 +29,6 @@ export default function PageFrame({ children }: GenericPageProps) {
             <Messages />
           </Main>
         </Grid>
-      </Sizer>
     </GlobalState>
   </Grommet>)
 }
